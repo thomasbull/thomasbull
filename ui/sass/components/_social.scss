@@ -1,0 +1,23 @@
+/**
+ * social
+ */
+.social {
+  font-size: 0;
+  margin-left: -8px;
+  margin-bottom: 60px;
+}
+
+.social li {
+  display: inline-block;
+  padding-left: 8px;
+  vertical-align: top;
+}
+
+.social a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: #b3e5d6;
+  border-radius: 50%;
+  padding-top: 12px;
+}

@@ -1,0 +1,19 @@
+// breakpoint map
+$breakpoints: (
+  'medium': (min-width: 700px),
+  'large': (min-width: 1200px),
+);
+
+// responsive manager
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

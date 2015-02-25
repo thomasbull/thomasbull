@@ -1,0 +1,23 @@
+/**
+ * tags
+ */
+.tags {
+  font-size: 0;
+  margin-left: -8px;
+}
+
+.tags li {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.tags span {
+  font-size: 11px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #d0d2d6;
+  border-radius: 4px;
+  line-height: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+}

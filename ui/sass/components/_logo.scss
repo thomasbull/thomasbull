@@ -1,0 +1,16 @@
+/**
+ * logo
+ */
+.logo {
+  font-family: 'Sullivan-Regular', sans-serif;
+  font-size: 92px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.logo--large {
+  @include respond-to('medium') {
+    font-size: 142px;
+    letter-spacing: 4px;
+  }
+}

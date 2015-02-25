@@ -1,0 +1,62 @@
+/**
+ * typography
+ */
+h1 {
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  
+  @include respond-to('medium') {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-top: -11px;
+    margin-bottom: 24px;
+  }
+}
+
+h1 span {
+  font-family: 'Times', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 17px;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  display: block;
+}
+
+h2 {
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 8px;
+  margin-bottom: 60px;
+  position: relative;
+  
+  &:after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -12px;
+    background-color: $mint-tulip;
+  }
+  
+  @include respond-to('large') {
+    margin-bottom: 19px;
+  }
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 8px;
+}

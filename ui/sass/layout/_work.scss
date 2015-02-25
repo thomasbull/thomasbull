@@ -1,0 +1,45 @@
+/**
+ * work
+ */
+.work {
+  padding-top: 57px;
+  
+  @include respond-to('medium') {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include respond-to('large') {
+    padding-top: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.work-items {
+  @include respond-to('medium') {
+    font-size: 0;
+  }
+}
+
+.work-item {
+  padding-bottom: 57px;
+  
+  @include respond-to('medium') {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  @include respond-to('large') {
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+}
+
+.work ::selection {
+  background-color: rgba(208, 210, 214, 0.75);
+  color: white;
+  text-shadow: none;
+}

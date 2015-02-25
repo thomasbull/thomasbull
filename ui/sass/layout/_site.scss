@@ -1,0 +1,37 @@
+/**
+ * site
+ */
+.site-page {
+  height: 100%;
+}
+
+.site-region {
+  &:first-child {
+    height: 100%;
+  }
+  
+  &:last-child {
+    background-color: $tuna;
+    border-top: 6px solid $mint-tulip;
+    
+    @include respond-to('large') {
+      height: 100%;
+      border-top: 0;
+    }
+  }
+  
+  @include respond-to('large') {
+    float: left;
+    width: 50%;
+  }
+}
+
+.site-foot {
+  background-color: $mint-tulip;
+  padding-top: 23px;
+  padding-bottom: 9px;
+  
+  @include respond-to('large') {
+    display: none;
+  }
+}

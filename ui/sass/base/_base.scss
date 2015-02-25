@@ -1,0 +1,66 @@
+/**
+ * base
+ */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $tuna;
+  overflow-y: scroll;
+  min-height: 100%;
+  background-color: $mint-tulip;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  
+  @include respond-to('large') {
+    min-height: 680px;
+  }
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: $tuna;
+  text-decoration: none;
+  outline: 0;
+  transition: all 0.6s $easeOutExpo;
+  
+  &:focus,
+  &:active {
+    color: #ccc;
+  }
+  
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+::selection {
+  background-color: transparent;
+  color: white;
+  text-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+object {
+  pointer-events: none;
+}

@@ -1,0 +1,51 @@
+/**
+ * bxslider
+ */
+.bx-wrapper {
+  position: relative;
+}
+
+.bx-viewport {
+  // fix other elements on the page moving (on chrome)
+  transform: translatez(0);
+}
+
+.bx-loading {
+  min-height: 50px;
+  background: url('../img/icons/loader.gif') center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.bx-pager {
+  height: 8px;
+	position: absolute;
+	bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bx-pager-item {
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.bx-pager-link {
+  background: $mint-tulip;
+	text-indent: -1000em;
+	display: block;
+	width: 8px;
+	height: 8px;
+  border-radius: 50%;
+  opacity: 0.4;
+  
+  &:hover,
+  &.active {
+    opacity: 1;
+  }
+}
